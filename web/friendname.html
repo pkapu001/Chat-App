@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="chatcss.css" />
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/scstart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-box">
+      <div>
+        <button class="back" onclick="window.history.back();">
+          <i class="fa fa-arrow-left"></i>
+        </button>
+        <h2>Login</h2>
+      </div>
+      <div class="inputs">
+        <input
+          id="friendname"
+          class="textbox"
+          type="text"
+          placeholder="Enter friend's username"
+        />
+        <input
+          type="button"
+          id="submit"
+          onclick="startchat()"
+          value="start chat"
+        />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="chatcss.css" />
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/sc.js"></script>
+    <script type="text/javascript" src="/scstart.js"></script>
+    <!-- <script type="text/javascript" src="/scstart.js"></script> -->
+  </head>
+  <body>
+    <template id="template-other">
+      <div class="chatbox-other chatbox">
+        <h4></h4>
+        <label></label>
+      </div>
+    </template>
+
+    <template id="template-self">
+      <div class="aa">
+        <div class="chatbox-self chatbox">
+          <h4></h4>
+          <label></label>
+        </div>
+      </div>
+    </template>
+
+    <div class="login-box">
+      <div>
+        <h2 id="title"></h2>
+      </div>
+      <div class="messagesbox" id="msgbox"></div>
+      <div class="sendbox">
+        <input
+          id="textbox"
+          class="textbox"
+          type="text"
+          placeholder="Enter message"
+          onKeypress="if(event.keyCode==13) sendmsg();"
+        />
+        <input type="button" id="send" type="submit" onclick="sendmsg()" />
+      </div>
+    </div>
+  </body>
+</html>
